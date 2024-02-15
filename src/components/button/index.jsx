@@ -8,9 +8,10 @@ const Button = ({ size, children }) => {
         "button",
         {
             className: classNames(
-                "bg-[#1d9bf0] rounded-full flex items-center",
+                "bg-[#1d9bf0] rounded-full flex items-center font-semibold justify-center hover:bg-[#1a8cd8] transition-colors",
                 {
-                    "px-4": size === "normal",
+                    "px-4 h-9": size === "normal",
+                    "px-4 h-[52px] text-[17px] w-full": size === "large",
                 }
             ),
         },
